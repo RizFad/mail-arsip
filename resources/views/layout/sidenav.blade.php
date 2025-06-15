@@ -1,12 +1,18 @@
 <!-- sidenav  -->
 <aside
     class="max-w-62.5 ease-nav-brand z-990 fixed inset-y-0 my-4 ml-4 block w-full -translate-x-full flex-wrap items-center justify-between overflow-y-auto rounded-2xl border-0 bg-white p-0 antialiased shadow-none transition-transform duration-200 xl:left-0 xl:translate-x-0 xl:bg-transparent">
-    <div class="h-19.5">
+    <div class="h-auto text-center px-6 py-4">
         <i class="absolute top-0 right-0 hidden p-4 opacity-50 cursor-pointer fas fa-times text-slate-400 xl:hidden"
             sidenav-close></i>
-        <a class="block px-8 py-6 m-0 text-lg leading-tight whitespace-nowrap text-slate-700 text-center" href="#">
-            <span class="ml-1 font-semibold transition-all duration-200 ease-nav-brand">SIARAT</span>
-            <p class="text-sm">Sistem Arsip Surat</p>
+        <a href="#" class="block">
+            <img src="{{ asset('assets/img/logo-1.png') }}" alt="Logo SITBAP"
+                class="mx-auto w-24 h-24 mb-2 rounded-full">
+            <span class="block text-base font-semibold text-slate-700 leading-tight">
+                SITBAP - LISSTRA PENDAM IM
+            </span>
+            <p class="text-xs text-slate-600">
+                Sistem Terintegrasi Berbasis Web Amanat Pimpinan (SITBAP)
+            </p>
         </a>
     </div>
 
@@ -64,7 +70,7 @@
                         href="{{ route('surat-masuk.index') }}">
                         <ion-icon name="mail-open" class="h-6 w-6"></ion-icon>
                         <span class="ml-2 text-base duration-300 opacity-100 pointer-events-none ease-soft">
-                            Surat Masuk
+                            Form Amanat
                         </span>
                     </a>
                 </li>
@@ -78,7 +84,17 @@
                         href="{{ route('surat-keluar.index') }}">
                         <ion-icon name="mail" class="h-6 w-6"></ion-icon>
                         <span class="ml-2 text-base duration-300 opacity-100 pointer-events-none ease-soft">
-                            Surat Keluar
+                            Database Amanat
+                        </span>
+                    </a>
+                </li>
+                <li
+                    class="{{ url()->current() == route('sop.index') ? 'bg-[#fff] text-indigo-800 rounded w-full' : ' ' }}">
+                    <a class="py-2.7 text-sm ease-nav-brand my-0 mx-4 flex items-center whitespace-nowrap px-4 transition-colors"
+                        href="{{ route('sop.index') }}">
+                        <ion-icon name="mail-unread" class="h-6 w-6"></ion-icon>
+                        <span class="ml-2 text-base duration-300 opacity-100 pointer-events-none ease-soft">
+                            SOP Penyiapan Amanat
                         </span>
                     </a>
                 </li>
@@ -110,7 +126,7 @@
                         href="{{ route('pimpinan.surat-masuk.index') }}">
                         <ion-icon name="mail-open" class="h-6 w-6"></ion-icon>
                         <span class="ml-2 text-base duration-300 opacity-100 pointer-events-none ease-soft">
-                            Surat Masuk
+                            Form Amanat
                         </span>
                     </a>
                 </li>
@@ -120,7 +136,7 @@
                         href="{{ route('pimpinan.surat-keluar.index') }}">
                         <ion-icon name="mail" class="h-6 w-6"></ion-icon>
                         <span class="ml-2 text-base duration-300 opacity-100 pointer-events-none ease-soft">
-                            Surat Keluar
+                            Database Amanat
                         </span>
                     </a>
                 </li>

@@ -51,7 +51,7 @@ class SuratMasukAdminController extends Controller
             'file'          => $filename
         ]);
 
-        return redirect()->route('surat-masuk.index')->with('message', 'Surat masuk berhasil ditambahkan.');
+        return redirect()->route('surat-masuk.index')->with('message', 'Form Amanat berhasil ditambahkan.');
     }
 
     public function show(int $suratmasuk)
@@ -99,7 +99,7 @@ class SuratMasukAdminController extends Controller
             'file'          => $filename,
         ]);
 
-        return redirect()->route('surat-masuk.index')->with('message', 'Surat masuk berhasil diedit.');
+        return redirect()->route('surat-masuk.index')->with('message', 'Form Amanat berhasil diedit.');
     }
 
     public function destroy(int $suratmasuk)
@@ -109,6 +109,6 @@ class SuratMasukAdminController extends Controller
         Storage::disk('public')->delete("suratmasuk/" . $surat->file);
         $surat->delete();
 
-        return response()->json(['status' => 200, 'message' => 'Surat masuk berhasil dihapus.']);
+        return response()->json(['status' => 200, 'message' => 'Form Amanat berhasil dihapus.']);
     }
 }

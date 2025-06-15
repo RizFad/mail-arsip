@@ -47,7 +47,7 @@
                                         <select id="suratmasuk" name="suratmasuk" autocomplete="suratmasuk"
                                             class="block w-full rounded-md border-0 p-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:max-w-xs sm:text-sm sm:leading-6"
                                             @error('suratmasuk') is-invalid @enderror">
-                                            <option disabled selected>-- Pilih Surat Masuk --</option>
+                                            <option disabled selected>-- Pilih Form Amanat --</option>
                                             @foreach ($suratmasuks as $suratmasuk)
                                                 <option value="{{ $suratmasuk->id }}"
                                                     @if ($suratmasuk->id == $disposisi->incoming_letter_id) selected @endif>

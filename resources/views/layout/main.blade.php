@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>@yield('title')</title>
     <!--     Fonts and icons     -->
+    <link rel="icon" type="image/x-icon" href="{{ asset('assets/img/favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
@@ -55,7 +56,7 @@
                         </div>
                         <div class="w-full max-w-full px-3 mt-0 shrink-0 lg:w-1/2 lg:flex-none">
                             <ul class="flex flex-wrap justify-end pl-0 mb-0 list-none lg:justify-end">
-                                <p class="text-sm">Created By Irfan Wahyudi.</p>
+                                <p class="text-sm">Created By Rizqy Fadhilah</p>
                             </ul>
                         </div>
                     </div>

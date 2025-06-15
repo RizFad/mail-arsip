@@ -49,7 +49,7 @@
                                             <div class="flex-none w-2/3 max-w-full px-3">
                                                 <div>
                                                     <p class="mb-0 font-sans font-semibold leading-normal text-md">
-                                                        Surat Masuk
+                                                        Form Amanat
                                                     </p>
                                                     <h5 class="mb-0 font-bold text-xl">
                                                         {{ $JumlahSuratMasuk }}
@@ -75,7 +75,7 @@
                                             <div class="flex-none w-2/3 max-w-full px-3">
                                                 <div>
                                                     <p class="mb-0 font-sans font-semibold leading-normal text-sm">
-                                                        Surat Keluar
+                                                        Database Amanat
                                                     </p>
                                                     <h5 class="mb-0 font-bold">
                                                         {{ $JumlahSuratKeluar }}

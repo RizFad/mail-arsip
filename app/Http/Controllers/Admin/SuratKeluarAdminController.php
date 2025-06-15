@@ -48,7 +48,7 @@ class SuratKeluarAdminController extends Controller
             'file'          => $filename,
         ]);
 
-        return redirect()->route('surat-keluar.index')->with('message', 'Surat keluar berhasil ditambahkan.');
+        return redirect()->route('surat-keluar.index')->with('message', 'Database Amanat berhasil ditambahkan.');
     }
 
     public function show(int $suratkeluar)
@@ -95,7 +95,7 @@ class SuratKeluarAdminController extends Controller
             'file'          => $filename,
         ]);
 
-        return redirect()->route('surat-keluar.index')->with('message', 'Surat keluar berhasil diedit.');
+        return redirect()->route('surat-keluar.index')->with('message', 'Database Amanat berhasil diedit.');
     }
 
     public function destroy(int $suratkeluar)
@@ -105,6 +105,6 @@ class SuratKeluarAdminController extends Controller
         Storage::disk('public')->delete("suratkeluar/" . $surat->file);
         $surat->delete();
 
-        return response()->json(['status' => 200, 'message' => 'Surat keluar berhasil dihapus.']);
+        return response()->json(['status' => 200, 'message' => 'Database Amanat berhasil dihapus.']);
     }
 }

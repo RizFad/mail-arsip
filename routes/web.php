@@ -70,6 +70,8 @@ Route::middleware(['auth'])->group(function () {
                 Route::get('/dashboard', [DashboardPegawaiController::class, 'index'])->name('dashboard');
                 Route::resource('/disposisi', DisposisiPegawaiController::class)->only(['index', 'update']);
     });
+    
+    Route::get('/sop-penyiapan-amanat', [App\Http\Controllers\SopController::class, 'index'])->name('sop.index');
 
     //Setting & logout users (admin,pimpinan,pegawai)
     Route::resource('/setting', SettingController::class)->only(['edit','update']);

@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Detail Surat Masuk - Pimpinan')
+@section('title', 'Detail Form Amanat - Pimpinan')
 
 @section('content')
     <div class="flex flex-wrap mt-2 -mx-3">
@@ -10,7 +10,7 @@
                 <div
                     class="relative flex flex-col w-full overflow-x-auto p-5 min-w-0 mb-0 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
                     <div class="flex flex-col pb-4 mb-0 bg-white rounded-t-2xl">
-                        <p class="text-lg text-black font-bold">Surat Masuk</p>
+                        <p class="text-lg text-black font-bold">Form Amanat</p>
                     </div>
                     <div class="flex-auto pb-2">
                         <div class="grid grid-cols-12 gap-3">

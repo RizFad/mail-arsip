@@ -145,7 +145,7 @@
 
             Swal.fire({
                     title: "Yakin ?",
-                    text: `Diposisi, Surat masuk ${noSurat} - ${perihal} akan diterima?`,
+                    text: `Diposisi, Form Amanat ${noSurat} - ${perihal} akan diterima?`,
                     icon: "warning",
                     showCancelButton: true,
                     confirmButtonColor: "#3085d6",

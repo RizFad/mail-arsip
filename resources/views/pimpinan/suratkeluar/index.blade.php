@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Halaman Surat Keluar - Pimpinan')
+@section('title', 'Halaman Database Amanat - Pimpinan')
 
 @section('content')
     {{-- Message Alert --}}
@@ -30,7 +30,7 @@
                 <div
                     class="relative flex flex-col w-full overflow-x-auto p-5 min-w-0 mb-0 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
                     <div class="flex flex-col pb-4 mb-0 bg-white rounded-t-2xl">
-                        <p class="text-lg text-black font-bold">Surat Keluar</p>
+                        <p class="text-lg text-black font-bold">Database Amanat</p>
                     </div>
                     <div class="flex-auto pb-2">
                         <div class="overflow-x-auto">

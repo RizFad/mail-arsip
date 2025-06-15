@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Edit Surat Masuk - Admin')
+@section('title', 'Edit Form Amanat - Admin')
 
 @section('content')
     <div class="flex flex-wrap my-6 -mx-3">
@@ -10,7 +10,7 @@
                 <div
                     class="relative flex flex-col w-full min-w-0 mb-0 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
                     <div class="p-6 pb-0 mb-0 bg-white rounded-t-2xl">
-                        <h6 class="text-base font-semibold leading-7 text-gray-900">Edit Surat Masuk</h6>
+                        <h6 class="text-base font-semibold leading-7 text-gray-900">Edit Form Amanat</h6>
 
                     </div>
 

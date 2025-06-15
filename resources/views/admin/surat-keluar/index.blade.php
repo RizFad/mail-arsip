@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Halaman Surat Keluar - Admin')
+@section('title', 'Halaman Database Amanat - Admin')
 
 @section('content')
     {{-- Message Alert --}}
@@ -30,7 +30,7 @@
                 <div
                     class="relative flex flex-col w-full overflow-x-auto p-5 min-w-0 mb-0 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
                     <div class="flex flex-col pb-4 mb-0 bg-white rounded-t-2xl">
-                        <p class="text-lg text-black font-bold">Surat Keluar</p>
+                        <p class="text-lg text-black font-bold">Database Amanat</p>
                         <a href="{{ route('surat-keluar.create') }}" type="button"
                             class="lg:w-[4%] w-[10%]  inline-block py-1 my-2 font-bold text-center uppercase align-middle transition-all bg-transparent border rounded-lg cursor-pointer border-indigo-800 hover:bg-indigo-800 leading-pro text-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 hover:scale-102 active:opacity-85 hover:shadow-soft-xs text-indigo-800 hover:text-white">
                             <ion-icon name="add" class="w-6 h-6"></ion-icon>
@@ -137,7 +137,7 @@
 
             Swal.fire({
                     title: "Yakin ?",
-                    text: `Surat keluar, dengan nomor surat ${noSurat} akan dihapus ?`,
+                    text: `Database Amanat, dengan nomor surat ${noSurat} akan dihapus ?`,
                     icon: "warning",
                     showCancelButton: true,
                     confirmButtonColor: "#3085d6",
